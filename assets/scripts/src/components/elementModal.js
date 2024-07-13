@@ -28,19 +28,25 @@ class ElementModal extends CustomElement {
 
         this.TEMPLATE = `
             <dialog class='element_info'>
-                <button>X</button>
+                <button>&#10060;</button>
                 <div>
-                    <h3></h3>
-                    <h1></h1>
-                    <p></p>
-                    <h2>Examples</h2>
-                    <ul class="examples"></ul>
-                    <h2>Organizations Exhibiting This</h2>
-                    <ul class="orgs-for"></ul>
-                    <h2>Organizations Fighting This</h2>
-                    <ul class="orgs-against"></ul>
-                    <h2>Additional Education and Resources</h2>
-                    <ul class="additional-resources"></ul>
+                    <header>
+                        <div id="element-box">
+                            <periodic-element data-id=""></periodic-element>
+                        </div>
+                        <h1></h1>
+                    </header>
+                    <article>
+                        <p></p>
+                        <h2>Examples</h2>
+                        <ul class="examples"></ul>
+                        <h2>Organizations Exhibiting This</h2>
+                        <ul class="orgs-for"></ul>
+                        <h2>Organizations Fighting This</h2>
+                        <ul class="orgs-against"></ul>
+                        <h2>Additional Education and Resources</h2>
+                        <ul class="additional-resources"></ul>
+                    </article>
                 </div>
             </dialog>
         `;
@@ -59,18 +65,20 @@ class ElementModal extends CustomElement {
         const element = findPeriodicElementByNumber(this.getAttribute('data-id'));
         if(!element) { return; }
 
-        this.shadowSelector('h3').innerText = element.number;
+        this.shadowSelector('periodic-element').setAttribute('data-id', this.getAttribute('data-id'));
+        this.shadowSelector('periodic-element').setAttribute('data-idtest', this.getAttribute('data-id'));
         this.shadowSelector('h1').innerText = element.full_name;
         this.shadowSelector('p').innerText = element.additional_information.extended_description;
+        this.shadowSelector('header').style.backgroundColor = elementTypes[element.type].color;
 
         this.shadowSelector('.examples').innerHTML = '';
         element.additional_information.examples.map(function(example) {
-                const listItem = document.createElement('li');
-                listItem.innerText = example;
-                return listItem;
-            }).forEach(
-                listItem => this.shadowSelector('.examples').append(listItem)
-            );
+            const listItem = document.createElement('li');
+            listItem.innerText = example;
+            return listItem;
+        }).forEach(
+            listItem => this.shadowSelector('.examples').append(listItem)
+        );
 
 
         this.shadowSelector('.orgs-for').innerHTML = '';

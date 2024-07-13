@@ -1,4 +1,6 @@
 class PeriodicTableElement extends CustomElement {
+    static observedAttributes = ["data-id"];
+
     constructor() {
         super(...arguments);
         this.STYLE = `
@@ -37,9 +39,6 @@ class PeriodicTableElement extends CustomElement {
                     height: calc(var(--increment-amount) * var(--element-size));
                     transition: 0.5s;
                     transition-delay: 50ms;
-                }
-
-                .periodic_table_element:hover .info-card {
                 }
                 
                 h1 {
@@ -101,6 +100,10 @@ class PeriodicTableElement extends CustomElement {
             modal.setAttribute('data-id', element.number);
             modal.open();
         });
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        this.postRender();
     }
 }
 
