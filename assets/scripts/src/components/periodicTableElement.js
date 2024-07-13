@@ -11,8 +11,8 @@ class PeriodicTableElement extends CustomElement {
 
                 .periodic_table_element {
                     position: relative;
-                    width: calc(100vw / 316 * 20);
-                    height: calc(100vw / 316 * 20);
+                    width: calc(var(--increment-amount) * var(--element-size));
+                    height: calc(var(--increment-amount) * var(--element-size));
                     background-color: white;
                     cursor: pointer;
                 }
@@ -24,16 +24,16 @@ class PeriodicTableElement extends CustomElement {
                 
                 .info-card {
                     position: absolute; 
-                    margin: calc(100vw / 316) calc(100vw / 316) 0;
-                    width: calc(100vw / 316 * 18);
-                    height: calc(100vw / 316 * 18);
+                    margin: var(--increment-amount) var(--increment-amount) 0;
+                    width: calc(var(--increment-amount) * (var(--element-size) - 2));
+                    height: calc(var(--increment-amount) * (var(--element-size) - 2));
                 }
 
                 .periodic_table_element:hover .info-card {
                     position: absolute; 
                     margin: 0;
-                    width: calc(100vw / 316 * 20);
-                    height: calc(100vw / 316 * 20);
+                    width: calc(var(--increment-amount) * var(--element-size));
+                    height: calc(var(--increment-amount) * var(--element-size));
                     transition: 0.5s;
                     transition-delay: 50ms;
                 }
@@ -56,15 +56,15 @@ class PeriodicTableElement extends CustomElement {
                 
                 .learn-more {
                     position: absolute; 
-                    width: calc(100vw / 316 * 20);
-                    height: calc(100vw / 316 * 5);
+                    width: calc(var(--increment-amount) * var(--element-size));
+                    height: calc(var(--increment-amount) * var(--element-size) / 4);
                     background-color: rgb(169,169,169, 50%);
-                    margin-top: calc(100vw / 316 * 20);
+                    margin-top: calc(var(--increment-amount) * var(--element-size));
                     font-size: 0.5em;
                 }
 
                 .periodic_table_element:hover .learn-more {
-                    margin-top: calc(100vw / 316 * 15);
+                    margin-top: calc(var(--increment-amount) * var(--element-size) * .75);
                     transition: 0.5s;
                     transition-delay: 50ms;
                 }

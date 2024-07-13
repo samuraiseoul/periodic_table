@@ -3,30 +3,41 @@
         <title>Periodic Table of Hate and Intolerance</title>
 
         <style>
+            :root {
+                --view-amount: 90vw;
+                --number-of-rows: 10;
+                --number-elements-in-full-row: 15;
+                --number-separators-in-full-row: calc(var(--number-elements-in-full-row) + 1);
+                --element-size: 20;
+                --border-size: 1;
+                --view-increments: calc(var(--number-elements-in-full-row) * var(--element-size) + var(--number-separators-in-full-row) * var(--border-size));
+                --increment-amount: calc(var(--view-amount) / var(--view-increments));
+            }
+
             h1, h2, h3, p {
                 margin: 0;
                 padding: 0;
             }
 
             main {
-                margin-top: 50px;
-                width: 100vw;
-                height: calc(100vw / 316 * 22 * 8);
+                margin: auto;
+                width: var(--view-amount);
+                height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)) * var(--number-of-rows));
             }
 
             main > div {
                 overflow: hidden;
                 width: 100%;
-                height: calc(100vw / 316 * 21);
+                height: calc(var(--increment-amount) * (var(--element-size) + var(--border-size)));
                 display: flex;
                 justify-content: space-between;
             }
 
             main > div > div {
                 display: flex;
-                height: calc(100vw / 316 * 21);
+                height: calc(var(--increment-amount) * (var(--element-size) + var(--border-size)));
                 border: none;
-                border-top: calc(100vw / 316) solid black;
+                border-top: var(--increment-amount) solid black;
                 justify-content: space-between;
             }
 
@@ -35,13 +46,13 @@
             }
 
             .bottom-border {
-                border-bottom: calc(100vw / 316) solid black;
+                border-bottom: var(--increment-amount) solid black;
             }
 
             .element-separator {
                 background-color: black;
                 height: 100%;
-                width: calc(100vw / 316);
+                width: calc(var(--border-size) * var(--increment-amount));
             }
         </style>
 
@@ -66,38 +77,38 @@
     <body>
         <main>
             <div>
-                <div style="width: calc(100vw / 316 * 22);">
+                <div>
                     <div class="element-separator"></div>
                     <periodic-element data-id="1"></periodic-element>
                     <div class="element-separator"></div>
                 </div>
-                <div style="width: calc(100vw / 316 * 22);">
+                <div>
                     <div class="element-separator"></div>
                     <periodic-element data-id="2"></periodic-element>
                     <div class="element-separator"></div>
                 </div>
             </div>
             <div>
-                <div style="width: calc(100vw / 316 * 22);">
+                <div>
                     <div class="element-separator"></div>
                     <periodic-element data-id="3"></periodic-element>
                     <div class="element-separator"></div>
                 </div>
-                <div style="width: calc(100vw / 316 * 22);">
+                <div>
                     <div class="element-separator"></div>
                     <periodic-element data-id="4"></periodic-element>
                     <div class="element-separator"></div>
                 </div>
             </div>
             <div>
-                <div style="width: calc(100vw / 316 * 43)">
+                <div>
                     <div class="element-separator"></div>
                     <periodic-element data-id="5"></periodic-element>
                     <div class="element-separator"></div>
                     <periodic-element data-id="24"></periodic-element>
                     <div class="element-separator"></div>
                 </div>
-                <div style="width: calc(100vw / 316 * 64)">
+                <div>
                     <div class="element-separator"></div>
                     <periodic-element data-id="25"></periodic-element>
                     <div class="element-separator"></div>
@@ -177,8 +188,8 @@
                     <div class="element-separator"></div>
                 </div>
             </div>
-            <div style="height: calc(100vw / 316 * 22);">
-                <div class="full-row bottom-border" style="height: calc(100vw / 316 * 20); overflow: hidden;">
+            <div style="height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)));">
+                <div class="full-row bottom-border" style="height: calc(var(--increment-amount) * var(--element-size)); overflow: hidden;">
                     <div class="element-separator"></div>
                     <periodic-element data-id="7"></periodic-element>
                     <div class="element-separator"></div>
