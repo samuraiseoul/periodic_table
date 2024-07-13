@@ -3,37 +3,42 @@ class PeriodicTableElement extends CustomElement {
         super(...arguments);
         this.STYLE = `
             <style>
-                h1, h2, h3 {
+                h1, h2, h3, p {
                     text-align: center;
                     margin: 0;
                     padding: 0;
                 }
 
                 .periodic_table_element {
-                    border: 1px solid black;
-                    height: 95px;
-                    width: 95px;
+                    position: relative;
+                    width: calc(100vw / 316 * 20);
+                    height: calc(100vw / 316 * 20);
                     background-color: white;
                     cursor: pointer;
                 }
 
                 .periodic_table_element:hover {
-                    height: 115px;
-                    width: 115px;
                     transition: 0.5s;
                     transition-delay: 50ms;
                 }
                 
                 .info-card {
-                    position: absolute;
-                    width: 85px;
-                    height: 85px;
-                    margin: 5px;
+                    position: absolute; 
+                    margin: calc(100vw / 316) calc(100vw / 316) 0;
+                    width: calc(100vw / 316 * 18);
+                    height: calc(100vw / 316 * 18);
                 }
 
                 .periodic_table_element:hover .info-card {
-                    width: 105px;
-                    height: 105px;
+                    position: absolute; 
+                    margin: 0;
+                    width: calc(100vw / 316 * 20);
+                    height: calc(100vw / 316 * 20);
+                    transition: 0.5s;
+                    transition-delay: 50ms;
+                }
+
+                .periodic_table_element:hover .info-card {
                 }
                 
                 h1 {
@@ -47,26 +52,21 @@ class PeriodicTableElement extends CustomElement {
                 h3 {
                     text-align: left;
                     font-size: .6em;
-                    padding-left: 5px;
-                    padding-top: 5px;
                 }
                 
-                .learn-more { 
-                    display: none;
+                .learn-more {
+                    position: absolute; 
+                    width: calc(100vw / 316 * 20);
+                    height: calc(100vw / 316 * 5);
                     background-color: rgb(169,169,169, 50%);
-                    position: absolute;
-                    width: 95px;
-                    height: 32px;
-                    margin-top: 95px;
-                    font-size: 10px;
+                    margin-top: calc(100vw / 316 * 20);
+                    font-size: 0.5em;
                 }
 
                 .periodic_table_element:hover .learn-more {
-                    display: initial;
-                    width: 115px;
+                    margin-top: calc(100vw / 316 * 15);
                     transition: 0.5s;
                     transition-delay: 50ms;
-                    margin-top: 83px;
                 }
             </style>
         `;
@@ -86,9 +86,8 @@ class PeriodicTableElement extends CustomElement {
     }
 
     postRender() {
-        const element = periodicTableElements.find(
-            element => element.number === this.getAttribute('data-id')
-        );
+        const element = findPeriodicElementByNumber(this.getAttribute('data-id'));
+        if(!element) { return; }
 
         this.shadowSelector('.info-card').style.backgroundColor = elementTypes[element.type].color;
 
