@@ -4,6 +4,10 @@ function toSnakeCase(camelCase) {
     }).slice(1);
 }
 
+function defineCustomElement(element) {
+    window.customElements.define(element.ELEMENT_NAME, element);
+}
+
 class CustomElement extends HTMLElement {
     connectedCallback() {
         this.render();

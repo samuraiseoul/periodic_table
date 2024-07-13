@@ -2,7 +2,7 @@ class PeriodicTableElement extends CustomElement {
     static observedAttributes = ["data-id"];
 
     constructor() {
-        super(...arguments);
+        super();
         this.STYLE = `
             <style>
                 h1, h2, h3, p {
@@ -88,23 +88,29 @@ class PeriodicTableElement extends CustomElement {
     postRender() {
         const element = findPeriodicElementByNumber(this.getAttribute('data-id'));
         if(!element) { return; }
+        if(!this.shadowRoot) { return; }
 
         this.shadowSelector('.info-card').style.backgroundColor = element.type === 'strategies' ? 'transparent' : elementTypes[element.type].color;
 
         this.shadowSelector('h3').innerText = element.number;
         this.shadowSelector('h1').innerText = element.abbreviation;
         this.shadowSelector('h2').innerText = element.full_name;
-
-        this.shadowSelector('.periodic_table_element').addEventListener('click', function() {
-            const modal = document.querySelector('element-modal');
-            modal.setAttribute('data-id', element.number);
-            modal.open();
-        });
     }
 
-    attributeChangedCallback(name, oldValue, newValue) {
+    registerListeners() {
+        this.addEventListener('click', function(event) {
+            this.dispatchEvent(new CustomEvent('element-clicked',  {
+                composed : true,
+                detail : {
+                    id : this.getAttribute('data-id')
+                }
+            }));
+        }.bind(this));
+    }
+
+    attributeChangedCallback() {
         this.postRender();
     }
 }
 
-window.customElements.define("periodic-element", PeriodicTableElement);
+defineCustomElement(PeriodicTableElement);

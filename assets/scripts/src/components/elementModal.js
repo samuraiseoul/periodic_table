@@ -1,6 +1,6 @@
 class ElementModal extends CustomElement {
     constructor() {
-        super(...arguments);
+        super();
         this.STYLE = `
             <style>
                 h1, h2, h3, p, ul, li {
@@ -80,7 +80,6 @@ class ElementModal extends CustomElement {
             listItem => this.shadowSelector('.examples').append(listItem)
         );
 
-
         this.shadowSelector('.orgs-for').innerHTML = '';
         this.shadowSelector('.orgs-against').innerHTML = '';
         this.shadowSelector('.additional-resources').innerHTML = '';
@@ -106,4 +105,4 @@ class ElementModal extends CustomElement {
     }
 }
 
-window.customElements.define("element-modal", ElementModal);
+defineCustomElement(ElementModal);
