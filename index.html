@@ -95,7 +95,8 @@
                 margin-left: calc(var(--increment-amount) * 200);
                 position: absolute;
                 display: flex;
-                width: calc(var(--increment-amount) * var(--element-size) * 6);
+                width: calc(var(--increment-amount) * var(--element-size) * 5);
+                border-top : var(--increment-amount) black solid;
             }
 
             .table-legend li {
@@ -105,6 +106,8 @@
             .table-legend > div:nth-child(1) {
                 text-orientation: upright;
                 width: calc(var(--increment-amount) * 6);
+                border-left : var(--increment-amount) black solid;
+                border-bottom : var(--increment-amount) black solid;
             }
 
             .table-legend > div:nth-child(1) > h2 {
@@ -112,18 +115,208 @@
             }
 
             .table-legend > div:nth-child(2) {
+                border-left : var(--increment-amount) black solid;
+                border-bottom : var(--increment-amount) black solid;
                 display: flex;
                 flex-direction: column;
-                width: calc(var(--increment-amount) * var(--element-size) * 2.5);
+                width: calc(var(--increment-amount) * var(--element-size) * 2);
             }
 
             .table-legend > div:nth-child(2) > ul {
-                width: calc(var(--increment-amount) * var(--element-size) * 2.5);
+                list-style: none;
+            }
+
+            .table-legend > div:nth-child(2) > ul > li {
+                position: relative;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #EC1B24;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(1) > li:nth-child(2):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #818284;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(1) > li:nth-child(3):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #00A64E;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(1) > li:nth-child(4):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #FEF004;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(1) > li:nth-child(5):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #C2B49A;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #D2D2D2;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: transparent;
+                border: 2px solid #8A3688;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(2) > ul:nth-child(2) {
+                border-right: var(--increment-amount) black solid;
             }
 
             .table-legend > div:nth-child(3) {
                 display: flex;
                 width: calc(var(--increment-amount) * var(--element-size) * 2.5);
+                border-bottom : var(--increment-amount) black solid;
+                border-right : var(--increment-amount) black solid;
+                margin-left: calc(var(--increment-amount) * var(--border-size) * 2);
+                height: calc(var(--increment-amount) * var(--element-size) * 1.25);
+            }
+
+            .table-legend > div:nth-child(3) > ul {
+                list-style: none;
+            }
+
+            .table-legend > div:nth-child(3) > ul > li {
+                position: relative;
+            }
+
+            .table-legend > div:nth-child(3) > ul > li:nth-child(1):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #00ADEF;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(3) > ul > li:nth-child(2):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #A17A54;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(3) > ul > li:nth-child(3):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #9597CB;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(3) > ul > li:nth-child(4):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #F4931D;
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+
+            .table-legend > div:nth-child(3) > ul > li:nth-child(5):before {
+                position: absolute;
+                left: calc(-1 * var(--increment-amount) * 4);
+                top: .1vw;
+                bottom: 0.3em;
+                content: ' ';
+                display: block;
+                width: calc(var(--increment-amount) * 2);
+                height: calc(var(--increment-amount) * 2);
+                background-color: #B8E5F9;
+                border: 2px solid black;
+                border-radius: 50%;
             }
         </style>
 
