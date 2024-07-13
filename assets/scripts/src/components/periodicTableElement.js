@@ -7,6 +7,7 @@ class PeriodicTableElement extends CustomElement {
                     text-align: center;
                     margin: 0;
                     padding: 0;
+                    font-family: sans-serif;
                 }
 
                 .periodic_table_element {
@@ -89,7 +90,7 @@ class PeriodicTableElement extends CustomElement {
         const element = findPeriodicElementByNumber(this.getAttribute('data-id'));
         if(!element) { return; }
 
-        this.shadowSelector('.info-card').style.backgroundColor = elementTypes[element.type].color;
+        this.shadowSelector('.info-card').style.backgroundColor = element.type === 'strategies' ? 'transparent' : elementTypes[element.type].color;
 
         this.shadowSelector('h3').innerText = element.number;
         this.shadowSelector('h1').innerText = element.abbreviation;

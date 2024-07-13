@@ -596,6 +596,786 @@ const periodicTableElements = [
             organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
             learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
         }
+    },
+    {
+        type : 'practices',
+        number : '46',
+        abbreviation : 'Sl',
+        full_name : 'Slavery',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '47',
+        abbreviation : 'Pg',
+        full_name : 'Propaganda',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '48',
+        abbreviation : 'Pe',
+        full_name : 'Persecution',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '49',
+        abbreviation : 'Pl',
+        full_name : 'Plundering',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '50',
+        abbreviation : 'Te',
+        full_name : 'Terror',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '51',
+        abbreviation : 'Pb',
+        full_name : 'Police Brutality',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '52',
+        abbreviation : 'Hr',
+        full_name : 'Human Rights Violations',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '53',
+        abbreviation : 'Im',
+        full_name : 'Imprisonment',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '54',
+        abbreviation : 'Si',
+        full_name : 'Spanish Inquisition',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '55',
+        abbreviation : 'Po',
+        full_name : 'Pogrom',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '56',
+        abbreviation : 'Ht',
+        full_name : 'Holocaust',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '57',
+        abbreviation : 'Op',
+        full_name : 'Occupation',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'practices',
+        number : '58',
+        abbreviation : 'Ap',
+        full_name : 'Apartheid',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '59',
+        abbreviation : 'KKK',
+        full_name : 'Ku Klux Klan',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '60',
+        abbreviation : 'WAR',
+        full_name : 'White Aryan Resistance',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '61',
+        abbreviation : 'WN',
+        full_name : 'White Nationalist',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '62',
+        abbreviation : 'RS',
+        full_name : 'Racist Skinhead',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '63',
+        abbreviation : 'NC',
+        full_name : 'Neo-Confederate',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '64',
+        abbreviation : 'BS',
+        full_name : 'Black Separatist',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '65',
+        abbreviation : 'WBC',
+        full_name : 'Westboro Baptist Church',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'groups',
+        number : '66',
+        abbreviation : 'FWI',
+        full_name : 'Family Watch International',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '67',
+        abbreviation : 'Ck',
+        full_name : 'Chink',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '68',
+        abbreviation : 'Dy',
+        full_name : 'Dummy',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '69',
+        abbreviation : 'Fg',
+        full_name : 'Faggot',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '70',
+        abbreviation : 'Gp',
+        full_name : 'Gimp',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '71',
+        abbreviation : 'Go',
+        full_name : 'Gringo',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '72',
+        abbreviation : 'Ki',
+        full_name : 'Kike',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '73',
+        abbreviation : 'Mu',
+        full_name : 'Mulatto',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '74',
+        abbreviation : 'Ng',
+        full_name : 'Nigger',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '75',
+        abbreviation : 'Rn',
+        full_name : 'Redneck',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '76',
+        abbreviation : 'Rd',
+        full_name : 'Retard',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '77',
+        abbreviation : 'Sv',
+        full_name : 'Savage',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '78',
+        abbreviation : 'Tr',
+        full_name : 'Terrorist',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '79',
+        abbreviation : 'Tg',
+        full_name : 'Thug',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '80',
+        abbreviation : 'Tw',
+        full_name : 'Towel Head',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '81',
+        abbreviation : 'Tt',
+        full_name : 'Trailer Trash',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'slurs',
+        number : '82',
+        abbreviation : 'Wb',
+        full_name : 'Wetback',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'people',
+        number : '83',
+        abbreviation : 'AlQ',
+        full_name : 'Al-Qaeda',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'people',
+        number : '84',
+        abbreviation : 'BA',
+        full_name : 'Bashar al-Assad',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'people',
+        number : '85',
+        abbreviation : 'KJU',
+        full_name : 'Kim Jong Un',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'people',
+        number : '86',
+        abbreviation : 'DT',
+        full_name : 'Donald Trump',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'people',
+        number : '87',
+        abbreviation : 'VP',
+        full_name : 'Vladmir Putin',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'people',
+        number : '88',
+        abbreviation : 'BH',
+        full_name : 'Boko Haram',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'people',
+        number : '89',
+        abbreviation : 'ISIS',
+        full_name : 'Islamic State of Iraq and the Levant',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '90',
+        abbreviation : 'Hp',
+        full_name : 'Hope',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '91',
+        abbreviation : 'Lv',
+        full_name : 'Love',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '92',
+        abbreviation : 'Ju',
+        full_name : 'Justice',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '93',
+        abbreviation : 'Ac',
+        full_name : 'Acceptance',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '94',
+        abbreviation : 'Ci',
+        full_name : 'Civility',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '95',
+        abbreviation : 'Ch',
+        full_name : 'Charity',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '96',
+        abbreviation : 'Cm',
+        full_name : 'Communication',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '97',
+        abbreviation : 'Ed',
+        full_name : 'Education',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '98',
+        abbreviation : 'Eq',
+        full_name : 'Equality',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '99',
+        abbreviation : 'RH',
+        full_name : 'Remembering History',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '100',
+        abbreviation : 'Fa',
+        full_name : 'Faith',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '101',
+        abbreviation : 'Fo',
+        full_name : 'Fortitude',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '102',
+        abbreviation : 'Pd',
+        full_name : 'Prudence',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '103',
+        abbreviation : 'Re',
+        full_name : 'Respect',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '104',
+        abbreviation : 'Tp',
+        full_name : 'Temperance',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
+    },
+    {
+        type : 'strategies',
+        number : '105',
+        abbreviation : 'Un',
+        full_name : 'Understanding',
+        additional_information : {
+            extended_description : '',
+            examples : ['', '', ''],
+            organizations_fighting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            organizations_exhibiting : [{url : '', display_name : ''}, {url : '', display_name : ''}],
+            learn_more : [{url : '', display_name : ''}, {url : '', display_name : ''}]
+        }
     }
 ];
 

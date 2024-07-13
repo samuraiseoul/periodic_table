@@ -17,6 +17,7 @@
             h1, h2, h3, p {
                 margin: 0;
                 padding: 0;
+                font-family: sans-serif;
             }
 
             main {
@@ -41,6 +42,14 @@
                 justify-content: space-between;
             }
 
+            main > div.strategies > div {
+                border-top-color: #8A3688;
+            }
+
+            main > div.strategies.bottom-border {
+                border-bottom-color: #8A3688;
+            }
+
             main > div > div.full-row {
                 width: 100%;
             }
@@ -53,6 +62,23 @@
                 background-color: black;
                 height: 100%;
                 width: calc(var(--border-size) * var(--increment-amount));
+            }
+
+            .strategies .element-separator {
+                background-color: #8A3688;
+            }
+
+            .title-text {
+                border: none;
+            }
+
+            .fake-bottom {
+                height: var(--increment-amount);
+            }
+
+            .fake-bottom > div {
+                border: none;
+                height: var(--increment-amount); background-color: black;
             }
         </style>
 
@@ -82,6 +108,9 @@
                     <periodic-element data-id="1"></periodic-element>
                     <div class="element-separator"></div>
                 </div>
+                <div class="title-text">
+                    <h1>THE PERIODIC TABLE</h1>
+                </div>
                 <div>
                     <div class="element-separator"></div>
                     <periodic-element data-id="2"></periodic-element>
@@ -93,6 +122,9 @@
                     <div class="element-separator"></div>
                     <periodic-element data-id="3"></periodic-element>
                     <div class="element-separator"></div>
+                </div>
+                <div class="title-text">
+                    <h1>OF HATE AND</h1>
                 </div>
                 <div>
                     <div class="element-separator"></div>
@@ -107,6 +139,9 @@
                     <div class="element-separator"></div>
                     <periodic-element data-id="24"></periodic-element>
                     <div class="element-separator"></div>
+                </div>
+                <div class="title-text">
+                    <h1>INTOLERANCE</h1>
                 </div>
                 <div>
                     <div class="element-separator"></div>
@@ -153,8 +188,8 @@
                     <div class="element-separator"></div>
                 </div>
             </div>
-            <div style="height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)));">
-                <div class="full-row bottom-border" style="height: calc(var(--increment-amount) * var(--element-size)); overflow: hidden;">
+            <div>
+                <div class="full-row">
                     <div class="element-separator"></div>
                     <periodic-element data-id="7"></periodic-element>
                     <div class="element-separator"></div>
@@ -185,6 +220,184 @@
                     <periodic-element data-id="45"></periodic-element>
                     <div class="element-separator"></div>
                     <periodic-element data-id="20"></periodic-element>
+                    <div class="element-separator"></div>
+                </div>
+            </div>
+            <div>
+                <div class="full-row">
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="8"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="46"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="47"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="48"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="49"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="50"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="51"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="52"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="53"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="54"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="55"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="56"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="57"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="58"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="21"></periodic-element>
+                    <div class="element-separator"></div>
+                </div>
+            </div>
+            <div>
+                <div class="full-row">
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="9"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="59"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="60"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="67"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="68"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="69"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="70"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="71"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="72"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="73"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="74"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="75"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="61"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="62"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="22"></periodic-element>
+                    <div class="element-separator"></div>
+                </div>
+            </div>
+            <div>
+                <div class="full-row">
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="10"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="63"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="64"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="76"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="83"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="84"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="85"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="86"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="87"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="88"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="89"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="77"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="66"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="66"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="23"></periodic-element>
+                    <div class="element-separator"></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="78"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="79"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="80"></periodic-element>
+                    <div class="element-separator"></div>
+                </div>
+                <div style="width: calc(var(--increment-amount) * (10 * var(--element-size) + 9)); height: var(--increment-amount);">
+<!--                        PLACEHOLDER TO MAKE FAKE BORDER TOP-->
+                </div>
+                <div>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="81"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="82"></periodic-element>
+                    <div class="element-separator"></div>
+                </div>
+            </div>
+
+            <div class="fake-bottom">
+                <div style="width: calc(var(--increment-amount) * (var(--element-size) * 3) + (var(--increment-amount) * 4));"></div>
+                <div style="width: calc(var(--increment-amount) * (var(--element-size) * 2) + (var(--increment-amount) * 3));"></div>
+            </div>
+
+            <div  class="strategies" style="margin-top: calc(var(--increment-amount)* -15); justify-content: space-around;">
+                <div>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="90"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="91"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="92"></periodic-element>
+                    <div class="element-separator"></div>
+                </div>
+            </div>
+            <div class="strategies bottom-border" style="height: calc(var(--increment-amount) * var(--element-size)); overflow: hidden;">
+                <div>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="93"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="94"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="95"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="96"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="97"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="98"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="99"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="100"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="101"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="102"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="103"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="104"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="105"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="91"></periodic-element>
+                    <div class="element-separator"></div>
+                    <periodic-element data-id="92"></periodic-element>
                     <div class="element-separator"></div>
                 </div>
             </div>
