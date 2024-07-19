@@ -13,14 +13,22 @@
                 --view-increments: calc(var(--number-elements-in-full-row) * var(--element-size) + var(--number-separators-in-full-row) * var(--border-size));
                 --increment-amount: calc(var(--view-amount) / var(--view-increments));
             }
-        </style>
 
-        <link rel="stylesheet" href="./assets/css/font-awesome.min.css"/>
+            main {
+                margin-top: 20px;
+            }
+        </style>
 
         <script src="./assets/data/elementTypes.js"></script>
         <script src="./assets/data/elements.js"></script>
 
         <script src="./assets/scripts/lib/customElement.js"></script>
+        <script src="./assets/scripts/src/components/pageHeader.js"></script>
+        <script src="./assets/scripts/src/components/aboutUs.js"></script>
+        <script src="./assets/scripts/src/components/contactUs.js"></script>
+        <script src="./assets/scripts/src/components/getInvolved.js"></script>
+        <script src="./assets/scripts/src/components/frequentlyAskedQuestions.js"></script>
+        <script src="./assets/scripts/src/components/pageFooter.js"></script>
         <script src="./assets/scripts/src/components/periodicTableElement.js"></script>
         <script src="./assets/scripts/src/components/elementModal.js"></script>
         <script src="./assets/scripts/src/components/keys/octagonKey.js"></script>
@@ -43,24 +51,45 @@
 
         <!--
             TODO: JS Docs
+            TODO: JS Imports?
             TODO: Generate table structure from multi-dimensional-array
             TODO: Style Modal
             TODO: GET FONTS AND KEARNING
             TODO: Make all vars based on ratios of view width
             TODO: Fix Legend Border and Symbols
             TODO: Border tapering
+            TODO: Accessibility
+            TODO: Switch components to focus on using IDs and semantic elements over classes
             TODO: Design rest of site nav and info
+                * Logo
+                * CTAs(Calls To Action) ["Help End Hate", "Walk the Anti-Bigot Walk", "Talk to Friends and Family"]
+                * Give Trust Signals ["Get official buy in from companies/orgs", "Show that we're real people with skills and competency and a vision"]
+                * Give a why they need to care
+                * Secondary CTAs, volunteers/collabs or other things
+                * About Us
+                * Contact Us
+                * Get Involved
+                * FAQ
             TODO: Mobile Design
+            TODO: Make real contact us form that works instead of an email link
             TODO: Highlight cards when moving over key?
             TODO: MORE COMPONENTS
             TODO: ASK FOR UX ONCE OVER FROM MICHAEL
             TODO: ASK FOR PR from BEN G/NATHAN
+            TODO: Discord?
+            TODO: Tutorial?
             TODO: SETTINGS LIKE DARK MODE(GDPR DOESN'T APPLY TO THESE)
         -->
     </head>
     <body>
+        <page-header></page-header>
         <main>
            <periodic-table></periodic-table>
+           <about-us id="about"></about-us>
+           <contact-us id="contact"></contact-us>
+           <get-involved id="getInvolved"></get-involved>
+           <frequently-asked-questions id="faq"></frequently-asked-questions>
         </main>
+        <page-footer></page-footer>
     </body>
 </html>
