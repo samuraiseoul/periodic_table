@@ -5,22 +5,28 @@ class TriangleKey extends CustomElement {
         super();
         this.STYLE = `
             <style>
-                svg {
-                    stroke: ${this.getAttribute('stroke')};
-                    fill: ${this.getAttribute('fill')};
+                .container {
                     width: calc(var(--increment-amount) * var(--border-size) * 6);
-                    height: calc(var(--increment-amount) * var(--border-size) * 3);
+                    height: calc(var(--increment-amount) * var(--border-size) * 6);
+                }
+                
+                svg {
+                    width: 90%;
+                    height: 90%;
+                    transform: rotate(180deg);
+                    fill: #D2D2D2;
+                    stroke-width: 8;
+                    stroke: black;
                 }
             </style>
         `;
 
         this.TEMPLATE = `
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg">
-                    <title>Downward Triangle</title>
-                    <path xmlns="http://www.w3.org/2000/svg" stroke-width="3" d="M8, 3H300L154, 105z"/>
+            <div class="container">
+                <svg id="triangle" stroke-width="2" viewBox="0 0 100 100">
+                    <polygon points="50 15, 100 100, 0 100"/>
                 </svg>
-            </div>
+            </div>   
         `;
     }
 

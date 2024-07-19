@@ -10,6 +10,11 @@ class PeriodicTable extends CustomElement {
                     width: var(--view-amount);
                     height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)) * var(--number-of-rows));
                 }
+                img {
+                    position: absolute;
+                    width: calc(var(--increment-amount));
+                    height: calc(var(--increment-amount));
+                }
             </style>
         `;
 
@@ -29,6 +34,7 @@ class PeriodicTable extends CustomElement {
                 <tenth-row></tenth-row>
                 <eleventh-row></eleventh-row>
             </div>
+            <img src="./assets/imgs/amy-signature.png" alt="Amy Cohen Efron's Signature" />
             <element-modal data-id=""></element-modal>
         `;
     }
