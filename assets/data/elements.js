@@ -1107,8 +1107,8 @@ const periodicTableElements = [
     {
         type : 'people',
         number : '85',
-        abbreviation : 'KJU',
-        full_name : 'Kim Jong Un',
+        abbreviation : 'KJu',
+        full_name : 'Kim Jong-un',
         additional_information : {
             extended_description : '',
             examples : ['', '', ''],
