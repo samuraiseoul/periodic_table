@@ -34,7 +34,6 @@ class PeriodicTable extends CustomElement {
                 <tenth-row></tenth-row>
                 <eleventh-row></eleventh-row>
             </div>
-            <img src="./assets/imgs/amy-signature.png" alt="Amy Cohen Efron's Signature" />
             <element-modal data-id=""></element-modal>
         `;
     }

@@ -41,10 +41,19 @@ class EleventhRow extends CustomElement {
                 .fake-bottom > div.spacer {
                     background-color: transparent;
                 }
+                
+                #signature {
+                    width: calc(var(--increment-amount) * 20);
+                    height: calc(var(--increment-amount) * 10);
+                    position: absolute;
+                    margin-top: calc(var(--increment-amount) * 10);
+                    margin-left: calc(var(--increment-amount) * 20 * 14.8);
+                }
             </style>
         `;
 
         this.TEMPLATE = `
+            <img id="signature" src="./assets/imgs/amy-signature.png" alt="Amy Cohen Efron's Signature 'AEfron' in a lovely cursive font." />
             <div id="row">
                 <div>
                     <div class="element-separator"></div>
