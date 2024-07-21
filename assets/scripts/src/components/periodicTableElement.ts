@@ -86,27 +86,25 @@ export default class PeriodicTableElement extends CustomElement {
         </div>
     `;
 
-    protected postRender() {
-        const element = findPeriodicElementByNumber(this.getAttribute('data-id'));
-        if(!element) { return; }
-        if(!this.shadowRoot) { return; }
+    public postRender() {
+        const element = findPeriodicElementByNumber(this.getAttribute('data-id') as string);
 
-        this.shadowSelector('.info-card').style.backgroundColor = element.type === 'strategies' ? 'transparent' : elementTypes[element.type].color;
+        (this.shadowSelector('.info-card') as HTMLDivElement).style.backgroundColor = element.type === 'strategies' ? 'transparent' : elementTypes[element.type].color;
 
-        this.shadowSelector('h3').innerText = element.number;
-        this.shadowSelector('h1').innerText = element.abbreviation;
-        this.shadowSelector('h2').innerText = element.full_name;
+        (this.shadowSelector('h3') as HTMLHeadingElement).innerText = element.number;
+        (this.shadowSelector('h1') as HTMLHeadingElement).innerText = element.abbreviation;
+        (this.shadowSelector('h2') as HTMLHeadingElement).innerText = element.full_name;
     }
 
-    protected registerListeners() {
-        this.addEventListener('click', function(event : Event): void {
+    public registerListeners() {
+        this.addEventListener('click', (event : Event) => {
             this.dispatchEvent(new CustomEvent('element-clicked',  {
                 composed : true,
                 detail : {
                     id : this.getAttribute('data-id')
                 }
             }));
-        }.bind(this));
+        });
     }
 
     protected attributeChangedCallback() {

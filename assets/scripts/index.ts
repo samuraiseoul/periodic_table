@@ -52,4 +52,3 @@ GetInvolved.defineSelf();
 FrequentlyAskedQuestions.defineSelf();
 
 PageFooter.defineSelf();
-

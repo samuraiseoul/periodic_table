@@ -1,4 +1,5 @@
 import CustomElement from "../../lib/customElement";
+import ElementModal from "./elementModal";
 
 export default class PeriodicTable extends CustomElement {
     protected readonly STYLE = `
@@ -35,11 +36,11 @@ export default class PeriodicTable extends CustomElement {
         <element-modal data-id=""></element-modal>
     `;
 
-    protected registerListeners() {
-        this.addEventListener('element-clicked', function(event : CustomEvent) : void {
-            const modal = this.shadowSelector('element-modal');
-            modal.setAttribute('data-id', event.detail.id);
+    public registerListeners() {
+        this.addEventListener('element-clicked', (event : Event)  => {
+            const modal = this.shadowSelector('element-modal') as ElementModal;
+            modal.setAttribute('data-id', (<CustomEvent>event).detail.id);
             modal.open();
-        }.bind(this));
+        });
     }
 }

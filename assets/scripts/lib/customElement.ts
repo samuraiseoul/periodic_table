@@ -1,4 +1,4 @@
-function toSnakeCase(camelCase) {
+function toSnakeCase(camelCase : string) : string {
     return camelCase.replace(/[A-Z]/g, function(firstMatch) {
         return '-' + firstMatch.toLowerCase();
     }).slice(1);
@@ -10,7 +10,7 @@ interface CustomElement {
     postRender?() : void;
 }
 
-export default abstract class CustomElement extends HTMLElement {
+abstract class CustomElement extends HTMLElement {
     protected abstract readonly STYLE: string;
 
     protected abstract readonly TEMPLATE: string;
@@ -33,17 +33,19 @@ export default abstract class CustomElement extends HTMLElement {
         this.postRender?.();
     }
 
-    protected shadowSelector(selector) {
+    protected shadowSelector(selector : string) : HTMLElement | null {
         return this.shadowRoot ? this.shadowRoot.querySelector(selector) : null;
     }
 
-    protected shadowSelectorAll(selector) {
-        return this.shadowRoot ? Array.from(this.shadowRoot.querySelectorAll(selector)) : null;
+    protected shadowSelectorAll(selector : string) : HTMLElement[] {
+        return this.shadowRoot ? Array.from(this.shadowRoot.querySelectorAll(selector)) : [];
     }
 
     static defineSelf() {
-        window.customElements.define(this.ELEMENT_NAME, this);
+        window.customElements.define(this.ELEMENT_NAME, this.constructor as CustomElementConstructor);
     }
 
     static get ELEMENT_NAME() { return toSnakeCase(this.name); }
 }
+
+export default CustomElement;
