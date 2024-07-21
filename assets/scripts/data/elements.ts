@@ -1,4 +1,4 @@
-interface ElementLink {
+export interface ElementLink {
     url : string;
     display_name : string;
 }
@@ -11,7 +11,7 @@ interface AdditionalInformation {
     learn_more : ElementLink[];
 }
 
-interface TableElement {
+export interface TableElement {
     type : string;
     number : string;
     abbreviation: string;
@@ -1401,7 +1401,5 @@ const periodicTableElements : TableElement[] = [
 ];
 
 export default function findPeriodicElementByNumber(number : string): TableElement {
-    return periodicTableElements.find(
-        element => element.number === number
-    );
+    return periodicTableElements[Number(number) - 1];
 }

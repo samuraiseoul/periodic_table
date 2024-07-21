@@ -1,6 +1,7 @@
 import CustomElement from "../../lib/customElement";
 import elementTypes from "../../data/elementTypes";
 import findPeriodicElementByNumber, {ElementLink, TableElement} from "../../data/elements";
+import PeriodicTableElement from "./periodicTableElement";
 
 export default class ElementModal extends CustomElement {
     protected readonly STYLE = `
@@ -69,18 +70,18 @@ export default class ElementModal extends CustomElement {
     public open() {
         const element = this.getTableElement();
 
-        this.shadowSelector('periodic-element')?.setAttribute('data-id', this.getTableElement().number);
+        (this.shadowSelector('periodic-element') as PeriodicTableElement).setAttribute('data-id', this.getTableElement().number);
         (this.shadowSelector('h1') as HTMLHeadingElement).innerText = element.full_name;
         (this.shadowSelector('p') as HTMLParagraphElement).innerText = element.additional_information.extended_description;
         (this.shadowSelector('header') as HTMLHeadingElement).style.backgroundColor = elementTypes[element.type].color;
 
         (this.shadowSelector('.examples') as HTMLUListElement).innerHTML = '';
-        element.additional_information.examples.map(function(example) {
+        element.additional_information.examples.map(function(example : string) {
             const listItem = document.createElement('li');
             listItem.innerText = example;
             return listItem;
         }).forEach(
-            listItem => (this.shadowSelector('.examples') as HTMLUListElement).append(listItem)
+            (listItem : HTMLLIElement) => (this.shadowSelector('.examples') as HTMLUListElement).append(listItem)
         );
 
         (this.shadowSelector('.orgs-for') as HTMLUListElement).innerHTML = '';
@@ -89,17 +90,17 @@ export default class ElementModal extends CustomElement {
 
         element.additional_information.organizations_exhibiting.map(ElementModal.linkDataToListItemHtmlElement)
             .forEach(
-                listItem => (this.shadowSelector('.orgs-for') as HTMLUListElement).append(listItem)
+                (listItem : HTMLLIElement) => (this.shadowSelector('.orgs-for') as HTMLUListElement).append(listItem)
             );
         element.additional_information.organizations_fighting
             .map(ElementModal.linkDataToListItemHtmlElement)
             .forEach(
-                listItem => (this.shadowSelector('.orgs-against') as HTMLUListElement).append(listItem)
+                (listItem : HTMLLIElement) => (this.shadowSelector('.orgs-against') as HTMLUListElement).append(listItem)
             );
         element.additional_information.learn_more
             .map(ElementModal.linkDataToListItemHtmlElement)
             .forEach(
-                listItem => (this.shadowSelector('.additional-resources') as HTMLUListElement).append(listItem)
+                (listItem : HTMLLIElement) => (this.shadowSelector('.additional-resources') as HTMLUListElement).append(listItem)
             );
 
         (this.shadowSelector('button') as HTMLButtonElement).addEventListener('click', event => (this.shadowSelector('dialog') as HTMLDialogElement).close());

@@ -89,8 +89,9 @@ export default class PeriodicTableElement extends CustomElement {
     public postRender() {
         const element = findPeriodicElementByNumber(this.getAttribute('data-id') as string);
 
-        (this.shadowSelector('.info-card') as HTMLDivElement).style.backgroundColor = element.type === 'strategies' ? 'transparent' : elementTypes[element.type].color;
+        if(!this.shadowRoot) { return; }
 
+        (this.shadowSelector('.info-card') as HTMLDivElement).style.backgroundColor = element.type === 'strategies' ? 'transparent' : elementTypes[element.type].color;
         (this.shadowSelector('h3') as HTMLHeadingElement).innerText = element.number;
         (this.shadowSelector('h1') as HTMLHeadingElement).innerText = element.abbreviation;
         (this.shadowSelector('h2') as HTMLHeadingElement).innerText = element.full_name;

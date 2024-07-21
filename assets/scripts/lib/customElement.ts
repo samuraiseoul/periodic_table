@@ -1,9 +1,3 @@
-function toSnakeCase(camelCase : string) : string {
-    return camelCase.replace(/[A-Z]/g, function(firstMatch) {
-        return '-' + firstMatch.toLowerCase();
-    }).slice(1);
-}
-
 interface CustomElement {
     registerListeners?() : void;
     preRender?() : void;
@@ -40,12 +34,6 @@ abstract class CustomElement extends HTMLElement {
     protected shadowSelectorAll(selector : string) : HTMLElement[] {
         return this.shadowRoot ? Array.from(this.shadowRoot.querySelectorAll(selector)) : [];
     }
-
-    static defineSelf() {
-        window.customElements.define(this.ELEMENT_NAME, this.constructor as CustomElementConstructor);
-    }
-
-    static get ELEMENT_NAME() { return toSnakeCase(this.name); }
 }
 
 export default CustomElement;
