@@ -11,10 +11,10 @@ export default class ContactUs extends CustomElement {
             to listen!
         </p>
         <ul>
-            <li>Discord</li>
-            <li>Github</li>
-            <li>Amy's Site</li>
-            <li>Sophie's Site</li>
+            <li><a href="https://discord.gg/SmTRvTGFVX">Discord</a></li>
+            <li><a href="https://github.com/samuraiseoul/periodic_table">Github</a></li>
+            <li><a href="https://aefronarts.com/">Amy's Site</a></li>
+            <li><a href="https://sophielionhart.com/">Sophie's Site</a></li>
             <li>Email Us! <a href="mailto:contactus@reframinghate.com">contactus@reframinghate.com</a></li>
         </ul>
     `;
