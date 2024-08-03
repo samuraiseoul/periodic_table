@@ -65,7 +65,7 @@ export default class TriggerWarning extends CustomElement {
     public registerListeners() {
         (this.shadowSelector('button') as HTMLButtonElement)
             .addEventListener('click', (event : Event) => {
-                (this.shadowSelector('#container') as HTMLDivElement).style.visibility = 'hidden';
+                this.style.visibility = 'hidden';
             });
     }
 }
