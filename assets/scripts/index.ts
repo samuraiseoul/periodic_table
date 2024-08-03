@@ -23,6 +23,7 @@ import EighthRow from "./src/components/rows/eighthRow";
 import NinthRow from "./src/components/rows/ninthRow";
 import TenthRow from "./src/components/rows/tenthRow";
 import EleventhRow from "./src/components/rows/eleventhRow";
+import TriggerWarning from "./src/components/triggerWarning";
 
 window.customElements.define('page-header', PageHeader);
 
@@ -33,6 +34,7 @@ window.customElements.define('octagon-key', OctagonKey);
 window.customElements.define('table-legend', TableLegend);
 window.customElements.define('periodic-table-element', PeriodicTableElement);
 window.customElements.define('element-modal', ElementModal);
+window.customElements.define('trigger-warning', TriggerWarning);
 window.customElements.define('first-row', FirstRow);
 window.customElements.define('second-row', SecondRow);
 window.customElements.define('third-row', ThirdRow);

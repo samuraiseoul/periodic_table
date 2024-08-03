@@ -17,6 +17,11 @@
             main {
                 margin-top: 20px;
             }
+
+            #table > .table-spacer {
+                height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)) / 4);
+                width: 100%;
+            }
         </style>
 
         <script src="./assets/scripts/dist/index.js"></script>
@@ -24,7 +29,12 @@
     <body>
         <page-header></page-header>
         <main>
-           <periodic-table></periodic-table>
+            <section id="table">
+                <trigger-warning></trigger-warning>
+                <div class="table-spacer"></div>
+                <periodic-table></periodic-table>
+                <div class="table-spacer"></div>
+            </section>
            <about-us id="about"></about-us>
            <contact-us id="contact"></contact-us>
            <get-involved id="getInvolved"></get-involved>
