@@ -4,11 +4,12 @@ import ElementModal from "./elementModal";
 export default class PeriodicTable extends CustomElement {
     protected readonly STYLE = `
         <style>
-            .table-container {
+            #table-container {
                 margin: auto;
                 width: var(--view-amount);
                 height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)) * var(--number-of-rows));
             }
+            
             img {
                 position: absolute;
                 width: calc(var(--increment-amount));
@@ -18,9 +19,10 @@ export default class PeriodicTable extends CustomElement {
     `;
 
     protected readonly TEMPLATE = `
+        <element-modal data-id=""></element-modal>
         <table-title></table-title>
         <table-legend></table-legend>
-        <div class="table-container">
+        <div id="table-container">
             <first-row></first-row>
             <second-row></second-row>
             <third-row></third-row>
@@ -33,7 +35,6 @@ export default class PeriodicTable extends CustomElement {
             <tenth-row></tenth-row>
             <eleventh-row></eleventh-row>
         </div>
-        <element-modal data-id=""></element-modal>
     `;
 
     public registerListeners() {
