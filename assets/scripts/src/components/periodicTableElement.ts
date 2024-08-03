@@ -44,16 +44,20 @@ export default class PeriodicTableElement extends CustomElement {
             }
             
             h1 {
-                font-size: 3em;
+                font-size: calc(var(--increment-amount) * 8);
             }
 
             h2 {
-                font-size: .75em;
+                padding-left: calc(var(--increment-amount) * -1);
+                padding-top: calc(var(--increment-amount) * -1);
+                font-size: calc(var(--increment-amount) * 3);
             }
 
             h3 {
+                padding-left: calc(var(--increment-amount));
+                padding-top: calc(var(--increment-amount));
+                font-size: calc(var(--increment-amount) * 2);
                 text-align: left;
-                font-size: .6em;
             }
             
             .learn-more {
@@ -62,7 +66,7 @@ export default class PeriodicTableElement extends CustomElement {
                 height: calc(var(--increment-amount) * var(--element-size) / 4);
                 background-color: rgb(169,169,169, 50%);
                 margin-top: calc(var(--increment-amount) * var(--element-size));
-                font-size: 0.5em;
+                font-size: calc(var(--increment-amount) * 2);
             }
 
             .periodic_table_element:hover .learn-more {

@@ -27,11 +27,11 @@ export default class PageFooter extends CustomElement {
             <section id="contact">
                 <h4>Contact Us</h4>
                 <ul>
-                    <li>Discord</li>
-                    <li>Github</li>
-                    <li>Amy</li>
-                    <li>Sophie</li>
-                    <li>Email Us</li>
+                    <li><a href="https://discord.gg/SmTRvTGFVX">Discord</a></li>
+                    <li><a href="https://github.com/samuraiseoul/periodic_table">Github</a></li>
+                    <li><a href="https://aefronarts.com/">Amy</a></li>
+                    <li><a href="https://sophielionhart.com/">Sophie</a></li>
+                    <li>Email Us! <a href="mailto:contactus@reframinghate.com">contactus@reframinghate.com</a></li>
                 </ul>
             </section>
             <section id="involvement">
