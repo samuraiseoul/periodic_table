@@ -101,8 +101,8 @@ export default class TableLegend extends CustomElement {
                     <ul class="no-border">
                         <li><circle-key stroke="black" fill="#EC1B24"></circle-key><p>EMOTIONS</p></li>
                         <li><octagon-key stroke="black" fill="#818284"></octagon-key><p>TYPES OF KILLING</p></li>
-                        <li><octagon-key stroke="black" fill="#00A64E"></octagon-key><p>"ISMS"</p></li>
-                        <li><octagon-key stroke="black" fill="#FEF004"></octagon-key><p>PHOBIAS/BELIEFS</p></li>
+                        <li><octagon-key stroke="black" fill="#00A64E"></octagon-key><p>" - ISMS"</p></li>
+                        <li><octagon-key stroke="black" fill="#FEF004"></octagon-key><p>PHOBIAS / BELIEFS</p></li>
                         <li><octagon-key stroke="black" fill="#C2B49A"></octagon-key><p>CYCLE OF OPPRESSION</p></li>
                     </ul>
                     <ul>
