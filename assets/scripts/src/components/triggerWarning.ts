@@ -33,10 +33,21 @@ export default class TriggerWarning extends CustomElement {
                 margin: auto;
                 background-color: white;
                 padding: 2em;
+                display: flex;
+                flex-direction: column;
             }
             
             article p {
                 padding: 2em;
+            }
+            
+            button {
+                background-color: limegreen;
+                margin: auto;
+                padding: 1em 2em;
+                font-weight: bold;
+                border-radius: 0.35em;
+                box-shadow: .25em .25em .25em rgba(1, 1, 1, .2);
             }
         </style>
     `;
@@ -44,7 +55,6 @@ export default class TriggerWarning extends CustomElement {
     protected readonly TEMPLATE = `
         <div id="container">
             <div id="modal">
-                <button>&#10060;</button>
                 <div>
                     <header>
                         <h1>TRIGGER WARNING</h1>
@@ -58,6 +68,7 @@ export default class TriggerWarning extends CustomElement {
                         world. That is the goal of everyone who has worked on this site. Thank you.</p>
                     </article>
                 </div>
+                <button>I understand and wish to proceed</button>
             </div>
         </div>
     `;
