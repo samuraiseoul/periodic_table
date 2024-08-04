@@ -192,7 +192,7 @@ const periodicTableElements : TableElement[] = [
     {
         type : 'isms',
         number : '13',
-        abbreviation : 'Se',
+        abbreviation : 'Sx',
         full_name : 'Sexism',
         additional_information : {
             extended_description : '',

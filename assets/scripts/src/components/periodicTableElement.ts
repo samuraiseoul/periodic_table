@@ -44,16 +44,34 @@ export default class PeriodicTableElement extends CustomElement {
             }
             
             h1 {
-                font-size: calc(var(--increment-amount) * 8);
+                height: 42.5%;
+                font-size: calc(var(--increment-amount) * 7);
+            }
+            
+            h1.long {
+                font-size: calc(var(--increment-amount) * 6.5);
             }
 
             h2 {
-                padding-left: calc(var(--increment-amount) * -1);
-                padding-top: calc(var(--increment-amount) * -1);
-                font-size: calc(var(--increment-amount) * 3);
+                height: 42.5%;
+                padding: 0 calc(var(--increment-amount));
+                font-size: calc(var(--increment-amount) * 2.5);
+            }
+
+            h2.medium {
+                font-size: calc(var(--increment-amount) * 2.25);
+            }
+
+            h2.long {
+                font-size: calc(var(--increment-amount) * 2);
+            }
+
+            h2.very-long {
+                font-size: calc(var(--increment-amount) * 1.75);
             }
 
             h3 {
+                height: 15%;
                 padding-left: calc(var(--increment-amount));
                 padding-top: calc(var(--increment-amount));
                 font-size: calc(var(--increment-amount) * 2);
@@ -62,11 +80,17 @@ export default class PeriodicTableElement extends CustomElement {
             
             .learn-more {
                 position: absolute; 
+                display: flex;
                 width: calc(var(--increment-amount) * var(--element-size));
                 height: calc(var(--increment-amount) * var(--element-size) / 4);
-                background-color: rgb(169,169,169, 50%);
+                background-color: rgb(169,169,169, .75);
                 margin-top: calc(var(--increment-amount) * var(--element-size));
                 font-size: calc(var(--increment-amount) * 2);
+            }
+            
+            .learn-more > p {
+                margin: auto;
+                font-weight: bolder;
             }
 
             .periodic_table_element:hover .learn-more {
@@ -85,7 +109,7 @@ export default class PeriodicTableElement extends CustomElement {
                 <h2></h2>
             </div>
             <div class="learn-more">
-                <p>Click to learn more! &#x1F50E;</p>
+                <p>Learn more! &#x1F50E;</p>
             </div>
         </div>
     `;
@@ -99,6 +123,22 @@ export default class PeriodicTableElement extends CustomElement {
         (this.shadowSelector('h3') as HTMLHeadingElement).innerText = element.number;
         (this.shadowSelector('h1') as HTMLHeadingElement).innerText = element.abbreviation;
         (this.shadowSelector('h2') as HTMLHeadingElement).innerText = element.full_name;
+
+        if(element.abbreviation.length > 2) {
+            (this.shadowSelector('h1') as HTMLHeadingElement).classList.add('long');
+        }
+
+        if(element.full_name.length > 12) {
+            (this.shadowSelector('h2') as HTMLHeadingElement).classList.add('medium');
+        }
+
+        if(element.full_name.length > 20) {
+            (this.shadowSelector('h2') as HTMLHeadingElement).classList.add('long');
+        }
+
+        if(element.full_name.length > 30) {
+            (this.shadowSelector('h2') as HTMLHeadingElement).classList.add('very-long');
+        }
     }
 
     public registerListeners() {
