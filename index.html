@@ -22,6 +22,16 @@
                 height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)) / 4);
                 width: 100%;
             }
+
+            #learn {
+                width: var(--view-amount);
+                margin: 1em auto;
+                padding: 1em;
+                border-radius: .5em;
+                border: solid black .10em;
+                display: flex;
+                justify-content: space-between;
+            }
         </style>
 
         <script src="./assets/scripts/dist/index.js"></script>
@@ -35,9 +45,11 @@
                 <periodic-table></periodic-table>
                 <div class="table-spacer"></div>
             </section>
-           <about-us id="about"></about-us>
-           <contact-us id="contact"></contact-us>
            <get-involved id="getInvolved"></get-involved>
+           <section id="learn">
+               <about-us id="about"></about-us>
+               <contact-us id="contact"></contact-us>
+           </section>
            <frequently-asked-questions id="faq"></frequently-asked-questions>
         </main>
         <page-footer></page-footer>
