@@ -35,6 +35,9 @@ export default class TriggerWarning extends CustomElement {
                 padding: 2em;
                 display: flex;
                 flex-direction: column;
+                border-radius: .5em;
+                border: solid black .10em;
+                box-shadow: .5em .5em .5em rgba(1, 1, 1, .4);
             }
             
             article p {
