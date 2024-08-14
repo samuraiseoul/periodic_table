@@ -51,6 +51,14 @@ export default class TriggerWarning extends CustomElement {
                 font-weight: bold;
                 border-radius: 0.35em;
                 box-shadow: .25em .25em .25em rgba(1, 1, 1, .2);
+                cursor: pointer;
+                width: 40%;
+                height: calc((var(--increment-amount) * (var(--element-size)) / 2));
+            }
+            
+            button:hover {
+                box-shadow: .5em .5em .5em rgba(1, 1, 1, .2);
+                transition: 0.75s;
             }
         </style>
     `;
