@@ -57,8 +57,8 @@ export default class TriggerWarning extends CustomElement {
             }
             
             button:hover {
-                box-shadow: .5em .5em .5em rgba(1, 1, 1, .2);
-                transition: 0.75s;
+                box-shadow: .5em .5em .5em rgba(1, 1, 1, .5);
+                transition: 0.5s;
             }
         </style>
     `;
