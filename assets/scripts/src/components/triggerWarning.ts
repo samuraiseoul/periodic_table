@@ -52,13 +52,13 @@ export default class TriggerWarning extends CustomElement {
                 border-radius: 0.35em;
                 box-shadow: .25em .25em .25em rgba(1, 1, 1, .2);
                 cursor: pointer;
-                width: 40%;
-                height: calc((var(--increment-amount) * (var(--element-size)) / 2));
+                transition: 250ms;
             }
             
             button:hover {
-                box-shadow: .5em .5em .5em rgba(1, 1, 1, .5);
-                transition: 0.5s;
+                transform: scale(1.05);
+                background-color: lawngreen;
+                box-shadow: .4em .4em .4em rgba(1, 1, 1, .5);
             }
         </style>
     `;
