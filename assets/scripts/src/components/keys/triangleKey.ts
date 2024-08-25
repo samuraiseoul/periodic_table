@@ -22,6 +22,7 @@ export default class TriangleKey extends CustomElement {
     protected readonly TEMPLATE = `
         <div class="container">
             <svg id="triangle" stroke-width="2" viewBox="0 0 100 100">
+                <title>Upside Down Triangle Key</title>
                 <polygon points="50 15, 100 100, 0 100"/>
             </svg>
         </div>   

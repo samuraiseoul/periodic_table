@@ -16,7 +16,7 @@ export default class OctagonKey extends CustomElement {
             <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <?xml version="1.0" encoding="utf-8"?>
             <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
-                <title id="octagonIconTitle">Octagon</title> 
+                <title id="octagonIconTitle">Octagon Key</title> 
                 <polygon points="16 3 21 8 21 16 16 21 8 21 3 16 3 8 8 3"/> 
             </svg>
         </div>

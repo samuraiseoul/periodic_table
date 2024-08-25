@@ -21,7 +21,7 @@ export default class PageFooter extends CustomElement {
                 <h4>The Original</h4>
                 <img 
                     src="./assets/imgs/periodic-table-of-hate-and-intolerance.png" 
-                    alt="Periodic Table Of Hate And Intolerance original artwork, by Amy Cohen Efron" 
+                    alt="The Periodic Table Of Hate And Intolerance, original artwork by Amy Cohen Efron" 
                 />
             </section>
             <section id="contact">

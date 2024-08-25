@@ -1,6 +1,24 @@
+<!doctype html>
 <html lang="en">
     <head>
-        <title>Periodic Table of Hate and Intolerance</title>
+        <title>Reframing Hate | The Periodic Table of Hate and Intolerance</title>
+        <link rel="icon" type="image/png" href="./assets/imgs/favicon.png">
+
+        <link rel="canonical" href="https://reframinghate.com/">
+        <meta name="description" content="Reframing Hate is an education website dedicated to eliminating the sources of hate, intolerance, bigotry and violence worldwide.">
+        <meta name=”robots” content="index, follow">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="The Periodic Table of Hate and Intolerance" />
+        <meta property="og:site_name" content="Reframing Hate" />
+        <meta property="og:description" content="Reframing Hate is an education website dedicated to eliminating the sources of hate, intolerance, bigotry and violence worldwide." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reframinghate.com/" />
+        <meta property="og:image" content="https://reframinghate.com/assets/imgs/periodic-table-of-hate-and-intolerance.png" />
+        <meta property="og:image:alt" content="The Periodic Table Of Hate And Intolerance, original artwork by Amy Cohen Efron" />
+
+
 
         <style>
             :root {
@@ -21,17 +39,6 @@
             #table > .table-spacer {
                 height: calc(var(--increment-amount) * (var(--element-size) + (var(--border-size) * 2)) / 4);
                 width: 100%;
-            }
-
-            #learn {
-                width: var(--view-amount);
-                margin: 1em auto;
-                padding: 1em;
-                border-radius: .5em;
-                border: solid black .10em;
-                box-shadow: .5em .5em .5em rgba(1, 1, 1, .4);
-                display: flex;
-                justify-content: space-between;
             }
         </style>
 
@@ -54,12 +61,10 @@
                 <periodic-table></periodic-table>
                 <div class="table-spacer"></div>
             </section>
-           <get-involved id="getInvolved"></get-involved>
-           <section id="learn">
-               <about-us id="about"></about-us>
-               <contact-us id="contact"></contact-us>
-           </section>
-           <frequently-asked-questions id="faq"></frequently-asked-questions>
+            <about-us id="about"></about-us>
+            <get-involved id="getInvolved"></get-involved>
+            <contact-us id="contact"></contact-us>
+            <frequently-asked-questions id="faq"></frequently-asked-questions>
         </main>
         <page-footer></page-footer>
     </body>
