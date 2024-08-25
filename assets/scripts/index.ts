@@ -24,6 +24,8 @@ import NinthRow from "./src/components/rows/ninthRow";
 import TenthRow from "./src/components/rows/tenthRow";
 import EleventhRow from "./src/components/rows/eleventhRow";
 import TriggerWarning from "./src/components/triggerWarning";
+import SocialLink from "./src/components/socialLink";
+import MessageForm from "./src/components/messageForm";
 
 window.customElements.define('page-header', PageHeader);
 
@@ -47,6 +49,9 @@ window.customElements.define('ninth-row', NinthRow);
 window.customElements.define('tenth-row', TenthRow);
 window.customElements.define('eleventh-row', EleventhRow);
 window.customElements.define('periodic-table', PeriodicTable);
+
+window.customElements.define('social-link', SocialLink);
+window.customElements.define('message-form', MessageForm);
 
 window.customElements.define('about-us', AboutUs);
 window.customElements.define('contact-us', ContactUs);
