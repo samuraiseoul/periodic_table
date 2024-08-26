@@ -44,7 +44,7 @@ export default class MessageForm extends CustomElement {
     protected readonly TEMPLATE = `
         <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
             <input type="hidden" name="subject" value="New Message from ReframingHate.com!">
-            <input type="hidden" name="access_key" value="ce4d34d3-b304-4ecb-b09e-9ebadae5295c">
+            <input type="hidden" name="access_key" value="6458f113-075d-4e9a-88c4-3327a4a38fb">
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             
             <h3 id="succeed">Message Sent Successfully!</h3>
