@@ -27,3 +27,4 @@ jobs:
         cd assets/scripts
         npm install
         npx webpack
+        ls dist
