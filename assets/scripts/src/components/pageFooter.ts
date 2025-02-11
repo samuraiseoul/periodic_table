@@ -12,6 +12,12 @@ export default class PageFooter extends CustomElement {
             #table img {
                 width: 20vw;
             }
+            
+            @media (max-width: 500px) {
+                footer {
+                    flex-direction: column;
+                }
+            }
         </style>
     `;
 

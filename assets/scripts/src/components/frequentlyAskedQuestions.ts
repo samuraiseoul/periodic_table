@@ -28,6 +28,12 @@ export default class FrequentlyAskedQuestions extends CustomElement {
             details:nth-child(odd) {
                 background-color: white;
             }
+            
+            @media (max-width: 500px) {
+                article {
+                    width: auto;
+                }
+            }
         </style>
     `;
 

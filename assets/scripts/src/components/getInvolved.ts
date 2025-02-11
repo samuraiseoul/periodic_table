@@ -24,6 +24,21 @@ export default class GetInvolved extends CustomElement {
             border: solid black .10em;
             box-shadow: .5em .5em .5em rgba(1, 1, 1, .4);
         }
+        
+        @media (max-width: 500px) {
+            article {
+                width: auto;
+            }
+            
+            article > div {
+                flex-direction: column;
+            }
+            
+            section {
+                width: 85%;
+                margin: 0 auto 1em auto;
+            }
+        }
     </style>`;
 
     protected readonly TEMPLATE = `
