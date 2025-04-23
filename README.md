@@ -4,7 +4,7 @@ Art by: [Amy Cohen Efron](https://aefronarts.com/)
 
 Installation
 ----
-Very simple, simply do the following from the project root:
+Very simple, do the following from the project root:
 ```bash
 cd assets/scripts
 npm i
